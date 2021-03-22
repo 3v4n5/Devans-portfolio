@@ -1,6 +1,7 @@
 .profile{
     background-color: #fff;
     border-radius: 6px;
+    border: 1px solid #eee;
     width: 100%;
     display: inline-block;
 }
@@ -29,4 +30,48 @@
 
 .profile_image img{
     width: 100%;
+}
+
+/* Information */
+.profile_information{
+    top: 0;
+    left: 0;
+    margin: -40px 10px 30px;
+}
+
+.profile_information .timeline .timeline_content{
+    margin-top: 2px;
+    margin-bottom: 12px !important;
+}
+
+.timelineItem_text{
+    font-size: 13.5px !important;
+    color: #787878 !important;
+    font-weight: 400 !important;
+    
+}
+
+.timelineItem_text a{
+    text-decoration: none;
+    color: #787878 !important;
+}
+
+.timelineItem_text a:hover{
+    color: var(--main-color) !important;
+}
+
+.timelineItem_text span{
+    color: black;
+    font-weight: 500;
+}
+
+.timelineItem{
+    min-height: 10px !important;
+}
+
+.profile .button_container{
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    margin-top: 20px;
 }
