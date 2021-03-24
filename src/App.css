@@ -26,8 +26,8 @@
 }
 
 .section{
-    margin-bottom: 30px;
-    padding-bottom: 45px;
+    margin-bottom: 30px !important;
+    padding-bottom: 45px !important;
 }
 
 .section_title{
@@ -54,3 +54,6 @@
     background-color: var(--main-color);
    
 }
+
+
+

@@ -8,10 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fafafa;
+  background: #ffffff;
   overflow-x: hidden;
-  background: url(./assets/images/bg.png);
- 
+  background: url(./assets/images/bg1.jpg);
+
 }
 
 code {
