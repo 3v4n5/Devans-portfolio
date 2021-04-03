@@ -10,8 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #ffffff;
   overflow-x: hidden;
-  background: url(./assets/images/bg1.jpg);
-
+  background: url(./assets/images/bg3.jpg);
+  background-position: center;
+  background-size: 460vh;
+  
 }
 
 code {
