@@ -48,3 +48,6 @@
     margin-right: auto;
 }
 
+.header .header_right .MuiSvgIcon-root:hover{
+    color: var(--main-color) !important;
+}

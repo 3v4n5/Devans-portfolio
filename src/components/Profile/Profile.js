@@ -1,6 +1,6 @@
-import { Typography } from '@material-ui/core'
+import { Link, Typography } from '@material-ui/core'
 import React from 'react'
-import profile from '../../assets/images/profile (1).jpg'
+import profile from '../../assets/images/perfil3.svg'
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 
@@ -13,12 +13,15 @@ import CustomButton from '../Button/Button';
 import GetAppIcon from '@material-ui/icons/GetApp';
 
 
+
+
+
 /* componente timeline profile */
 const CustomTimelineItem = ({ title, text, link }) => {
 
     return (
         <TimelineItem className='timelineItem'>
-            <CustomTimelineSeparator />
+            <CustomTimelineSeparator className='timeline' />
             <TimelineContent className='timeline_content'>
                 {link ? (
                     <Typography className='timelineItem_text'>
@@ -36,6 +39,8 @@ const CustomTimelineItem = ({ title, text, link }) => {
 }
 
 const Profile = () => {
+    
+
     return (
         <div className="profile container_shadow">
             <div className="profile_name">
@@ -43,28 +48,30 @@ const Profile = () => {
                 <Typography className="title">{resumeData.title}</Typography>
             </div>
 
-            <figure className="profile_image">
-                <img src={profile} alt="" />
-               {/* <img src={require("../../assets/images/perfil.jpg")} alt=""/> */}
+            <figure className="profile_image img-fluid">
+                <img className='img-fluid' src={profile} alt="imagen de perfil" />
+                {/* <img src={require("../../assets/images/perfil.jpg")} alt=""/> */}
             </figure>
 
             <div className="profile_information">
                 <CustomTimeline icon={<PersonOutlineOutlinedIcon />}>
-                    <CustomTimelineItem title='Name' text={resumeData.name} />
-                    <CustomTimelineItem title='Title' text={resumeData.title} />
+                    <CustomTimelineItem title='Nombre' text={resumeData.name} />
                     <CustomTimelineItem title='Email' text={resumeData.email} />
+                    <CustomTimelineItem title='Tel' text={resumeData.phone} />
+                    <CustomTimelineItem title='Ubicacion' text={resumeData.addres} />
 
-                    {Object.keys(resumeData.socials).map((key) => (
+                    {/* {Object.keys(resumeData.socials).map((key) => (
                         <CustomTimelineItem
                             title={key} 
                             text={resumeData.socials[key].text} 
                             link={resumeData.socials[key].link} 
                         />
-                    ))}
-                </CustomTimeline>
+                    ))} */}
                 <div className="button_container">
-                    <CustomButton text={'Download CV'} icon={<GetAppIcon/>}/>
+                    {/* <Link to='/pdf'><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></Link> */} 
+                    <a href="/pdf"><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></a>
                 </div>
+                </CustomTimeline>
             </div>
         </div>
     )

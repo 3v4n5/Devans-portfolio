@@ -23,13 +23,16 @@
 }
 
 .profile_image{
-    margin-top: -10px;
-    -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
-    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+    margin-top: -60px;
+    /* -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+    clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%); */
+    justify-content: center !important;
 }
 
 .profile_image img{
-    width: 100%;
+   /*  width: 100%; */
+   height: 300px !important;
+   width: 300px !important;
 }
 
 /* Information */
@@ -75,3 +78,66 @@
     justify-content: center;
     margin-top: 20px;
 }
+
+@media (max-width: 960px) {
+
+    .timelineItem .timeline_content{
+        display: flex  !important;
+        justify-content: center  !important;
+        align-items: center  !important;
+    }
+
+    
+    .profile_name .name{
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .profile_name .title{
+        font-size: 15px;
+        color: #777;
+        text-align: center;
+    }
+
+    .profile_image{
+        display: flex;
+    }
+
+    .profile_image img{
+       height: 400px !important;
+       width: 400px !important;
+       justify-content: center !important;
+    }
+
+    
+  }
+
+
+
+  @media (max-width: 600px){
+
+    .profile_name .name{
+        text-transform: uppercase;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .profile_name .title{
+        font-size: 13px;
+        color: #777;
+        text-align: left;
+    }
+
+    .profile_image img{
+        /*  width: 100%; */
+        height: 300px !important;
+        width: 300px !important;
+        justify-content: flex-start !important;
+     }
+     .timelineItem .timeline_content{
+        display: flex  !important;
+        justify-content: flex-start !important;
+    }
+  }

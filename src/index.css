@@ -11,9 +11,8 @@ body {
   background: #ffffff;
   overflow-x: hidden;
   background: url(./assets/images/bg3.jpg);
-  background-position: center;
-  background-size: 460vh;
-  
+  background-position: top;
+  object-fit: cover;
 }
 
 code {

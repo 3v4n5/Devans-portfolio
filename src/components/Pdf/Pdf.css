@@ -1,0 +1,55 @@
+.pdf{
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 1320px){
+    .pdf{
+        position: absolute;
+        width: 73%;
+        height: 90%;
+    }
+}
+
+/* @media (max-width: 1278px){
+    .pdf{
+        position: absolute;
+        width: 91%;
+        height: 90%;
+    }
+} */
+
+@media (max-width: 960px){
+    .pdf{
+        position: absolute;
+        width: 98%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 760px){
+    .pdf{
+        position: absolute;
+        width: 95%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .pdf{
+        position: absolute;
+        width: 94%;
+        height: 100%;
+    }
+}
+@media (max-width: 460px){
+    .pdf{
+        position: absolute;
+        width: 90%;
+        height: 100%;
+    }
+}

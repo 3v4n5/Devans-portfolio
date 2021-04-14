@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
             <div className="footer_right">
             <Typography className='footer_copy'>
-                Designed and Developed by <a href="http://devans.com" target='_blank'>Devans.com</a>
+                Diseño y Desarrollo x <a href="http://devans.online" target='blank'>Devans.online</a>
             </Typography>
             </div>
         </div>

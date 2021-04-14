@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card, CardActionArea, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogTitle, Grid, Grow, Tab, Tabs, Typography } from '@material-ui/core';
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogTitle, Grid, Grow, Tab, Tabs, Typography } from '@material-ui/core';
 import resumeData from '../../utils/resumeData'
 
 import './Portfolio.css'
@@ -16,7 +16,7 @@ const Portfolio = () => {
             {/* Title */}
             <Grid item className='section_title'>
                 <span></span>
-                <h6 className='section_title_text'>Portfolio</h6>
+                <h6 className='section_title_text'>Portafolio</h6>
             </Grid>
 
             {/* Tabs */}
@@ -64,15 +64,17 @@ const Portfolio = () => {
 
 
             <Dialog open={projectDialog} onClose={() => setProjectDialog(false)} className='projectDialog'>
-                <DialogTitle onClose={() => setProjectDialog(false)}>{projectDialog.title}</DialogTitle>
+                <DialogTitle >
+                    {projectDialog.title}
+                </DialogTitle>
                 <img src={projectDialog.image} alt="" className='projectDialog_image' />
                 <DialogContent>
                     <Typography className='projectDialog_description'>{projectDialog.description}</Typography>
                 </DialogContent>
                 <DialogActions className='projectDialog_actions'>
-                    {projectDialog.links?.map((link) => (
-                        <a href={link.link} target="_blank" className='projectDialog_icon'>
-                            {link.icon}
+                    {projectDialog?.links?.map((link) => (
+                        <a href={link.link} target='_blank' className='projectDialog_icon'>
+                           {link.icon}
                         </a>
                     ))}
                 </DialogActions>

@@ -1,6 +1,7 @@
 
 :root{
-    --main-color: #ffc500; 
+    --main-color:           rgba(61,161,255,0.98);
+    /* rgba(52,127,218,1); */
 }
 
 /* margin padding container */
@@ -27,7 +28,7 @@
 
 .section{
     margin-bottom: 30px !important;
-    padding-bottom: 40px !important;
+    padding-bottom: 25px !important;
     padding-top: 40px;
 }
 
