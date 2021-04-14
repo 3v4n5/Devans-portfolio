@@ -69,7 +69,7 @@ const Profile = () => {
                     ))} */}
                 <div className="button_container">
                     {/* <Link to='/pdf'><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></Link> */} 
-                    <a href="/pdf"><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></a>
+                    <a href="/pdf" target='_blank'><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></a>
                 </div>
                 </CustomTimeline>
             </div>
