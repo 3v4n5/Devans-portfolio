@@ -2,7 +2,7 @@ import React from 'react'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { GitHub, Language, Lens, WebOutlined, YouTube } from '@material-ui/icons';
+import { GitHub, Language, WebOutlined } from '@material-ui/icons';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import BrushIcon from '@material-ui/icons/Brush';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';

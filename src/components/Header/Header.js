@@ -11,7 +11,7 @@ import './Header.css'
 
 
 const Header = (props) => {
-    const pathName = props?.location?.pathname;
+    const pathName = props?.location?.pathName;
 
 
     return (
@@ -27,22 +27,22 @@ const Header = (props) => {
             <Navbar.Collapse>
                 <Nav className='header_left'>
                     {/* Resume Link */}
-                    <Nav.Link as={NavLink} to="/" className={pathName == "/" ? "header_link_active" : "header_link"}>
+                    <Nav.Link as={NavLink} to="/" className={pathName === "/" ? "header_link_active" : "header_link"}>
                         Curriculum
                     </Nav.Link>
                     {/* Portfolio */}
-                    <Nav.Link as={NavLink} to="/portfolio" className={pathName == "/portfolio" ? "header_link_active" : "header_link"}>
+                    <Nav.Link as={NavLink} to="/portfolio" className={pathName === "/portfolio" ? "header_link_active" : "header_link"}>
                         Portafolio
                     </Nav.Link>
                     {/* Contacto */}
-                    <Nav.Link as={NavLink} to="/contacto" className={pathName == "/contacto" ? "header_link_active" : "header_link"}>
+                    <Nav.Link as={NavLink} to="/contacto" className={pathName === "/contacto" ? "header_link_active" : "header_link"}>
                         Contacto
                     </Nav.Link>
                 </Nav>
 
                 <div className="header_right">
                     {Object.keys(resumeData.socials).map(key => (
-                        <a href={resumeData.socials[key].link} target="_blank">
+                        <a href={resumeData.socials[key].link} target="blank">
                             {resumeData.socials[key].icon}
                         </a>
                     ))}

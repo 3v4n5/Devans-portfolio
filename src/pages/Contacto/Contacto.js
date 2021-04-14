@@ -6,8 +6,6 @@ import resumeData from '../../utils/resumeData'
 import emailjs from 'emailjs-com';
 
 import './Contacto.css'
-import CustomButton from '../../components/Button/Button';
-import GetAppIcon from '@material-ui/icons/GetApp';
 
 const Contacto = () => {
 
@@ -96,7 +94,7 @@ const Contacto = () => {
                             <Grid container className='contacinfo_socialContainer'>
                                 {Object.keys(resumeData.socials).map(key => (
                                     <Grid item className='contacInfo_social'>
-                                        <a href={resumeData.socials[key].link} target="_blank">
+                                        <a href={resumeData.socials[key].link} target="blank">
                                             {resumeData.socials[key].icon}
                                         </a>
                                     </Grid>

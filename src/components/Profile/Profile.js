@@ -1,4 +1,4 @@
-import { Link, Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core'
 import React from 'react'
 import profile from '../../assets/images/perfil3.svg'
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
@@ -26,7 +26,7 @@ const CustomTimelineItem = ({ title, text, link }) => {
                 {link ? (
                     <Typography className='timelineItem_text'>
                         <span>{title}: </span>{" "}
-                        <a href={link} target='_blank'>{text}</a>
+                        <a href={link} target='blank'>{text}</a>
                     </Typography>
                 ) : (
                     <Typography className='timelineItem_text'>
@@ -68,8 +68,7 @@ const Profile = () => {
                         />
                     ))} */}
                 <div className="button_container">
-                    {/* <Link to='/pdf'><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></Link> */} 
-                    <a href="/pdf" target='_blank'><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></a>
+                    <a href="https://drive.google.com/file/d/1FxrINZUcurKX3a8mzdkzWtrFwqEK-_k6/view?usp=sharing" target='blank'><CustomButton text='Descarga CV' icon = {<GetAppIcon/>} /></a>
                 </div>
                 </CustomTimeline>
             </div>

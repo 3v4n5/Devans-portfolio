@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import './App.css';
 import Contacto from './pages/Contacto/Contacto';
-import { Pdf } from './components/Pdf/Pdf';
 
 
 
@@ -32,12 +31,8 @@ function App() {
                 <Route path="/portfolio">
                   <Portfolio />
                 </Route>
-
                 <Route path="/contacto">
                   <Contacto />
-                </Route>
-                <Route path="/pdf">
-                  <Pdf />
                 </Route>
                 <Route path="/">
                   <Curriculum />
