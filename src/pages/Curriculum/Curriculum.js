@@ -3,7 +3,7 @@ import React from 'react'
 import CustomTimeline, { CustomTimelineSeparator } from '../../components/Timeline/Timeline'
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
-import resumeData from '../../utils/resumeData'
+import data from '../../utils/resumeData'
 import WorkIcon from '@material-ui/icons/Work';
 import SchoolIcon from '@material-ui/icons/School';
 
@@ -20,7 +20,7 @@ const Curriculum = () => {
                     <h6 className='section_title_text'>Sobre Mi</h6>
                 </Grid>
                 <Grid item xs={12}>
-                    <Typography variant='body2' className='about_text'>{resumeData.about}</Typography>
+                    <Typography variant='body2' className='about_text'>{data.about}</Typography>
                 </Grid>
             </Grid>
 
@@ -36,8 +36,8 @@ const Curriculum = () => {
                         {/* Experiences */}
                         <Grid item sm={12} md={6}>
                             <CustomTimeline title='Experiencia Laboral' icon={<WorkIcon />}>
-                                {resumeData.experience.map(experience => (
-                                    <TimelineItem>
+                                {data.experience.map((experience, i) => (
+                                    <TimelineItem key={i}>
                                         <CustomTimelineSeparator />
                                         <TimelineContent className='timeline_content'>
                                             <Typography className='timeline_title'>{experience.title}</Typography>
@@ -52,8 +52,8 @@ const Curriculum = () => {
                         {/* Education */}
                         <Grid item sm={12} md={6}>
                             <CustomTimeline title='Educacion' icon={<SchoolIcon />}>
-                                {resumeData.education.map(education => (
-                                    <TimelineItem>
+                                {data.education.map((education, i) => (
+                                    <TimelineItem key={i}>
                                         <CustomTimelineSeparator />
                                         <TimelineContent className='timeline_content'>
                                             <Typography className='timeline_title'>{education.title}</Typography>
@@ -78,8 +78,8 @@ const Curriculum = () => {
 
                 <Grid item xs={12} className="bg-color">
                     <Grid container spacing={3} justify='space-evenly' className="bg-color">
-                        {resumeData.services.map(service => (
-                            <Grid item xs={12} sm={6} md={3}>
+                        {data.services.map((service, i) => (
+                            <Grid item xs={12} sm={6} md={3} key={i}>
                                 <Paper elevation={3}>
                                     <div className="service">
                                         <div className='service_icon'>{service.icon}</div>

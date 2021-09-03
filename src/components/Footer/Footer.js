@@ -1,6 +1,6 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
-import resumeData from '../../utils/resumeData'
+import data from '../../utils/resumeData'
 import './Footer.css'
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='footer'>
             <div className="footer_left">
                 <Typography className='footer_name'>
-                    {resumeData.name}
+                    {data.name}
                  </Typography>
             </div>
             <div className="footer_right">

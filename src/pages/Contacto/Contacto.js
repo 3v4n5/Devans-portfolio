@@ -1,7 +1,7 @@
 import { Grid, TextField, Typography } from '@material-ui/core'
 import React from 'react'
 
-import resumeData from '../../utils/resumeData'
+import data from '../../utils/resumeData'
 
 import emailjs from 'emailjs-com';
 
@@ -74,17 +74,17 @@ const Contacto = () => {
                             <Grid container spacing={2}>
                                 <Grid item xs={12}>
                                     <Typography className='contactinfo_item'>
-                                        <span>Ubicacion: </span>{resumeData.addres}
+                                        <span>Ubicacion: </span>{data.addres}
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography className='contactinfo_item'>
-                                        <span>Tel: </span>{resumeData.phone}
+                                        <span>Tel: </span>{data.phone}
                                     </Typography>
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography className='contactinfo_item'>
-                                        <span>Email: </span>{resumeData.email}
+                                        <span>Email: </span>{data.email}
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -92,10 +92,10 @@ const Contacto = () => {
 
                         <Grid item xs={12}>
                             <Grid container className='contacinfo_socialContainer'>
-                                {Object.keys(resumeData.socials).map(key => (
+                                {Object.keys(data.socials).map(key => (
                                     <Grid item className='contacInfo_social'>
-                                        <a href={resumeData.socials[key].link} target="blank">
-                                            {resumeData.socials[key].icon}
+                                        <a href={data.socials[key].link} target="blank">
+                                            {data.socials[key].icon}
                                         </a>
                                     </Grid>
                                 ))}

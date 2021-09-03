@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Card, CardActionArea, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogTitle, Grid, Grow, Tab, Tabs, Typography } from '@material-ui/core';
-import resumeData from '../../utils/resumeData'
+import data from '../../utils/resumeData'
 
 import './Portfolio.css'
 
@@ -28,7 +28,7 @@ const Portfolio = () => {
                     onChange={(event, newValue) => setTabValue(newValue)}>
                     <Tab label='All' value='All' className={tabValue === 'All' ? 'customTabs_item active' : 'customTabs_item'} />
 
-                    {[...new Set(resumeData.projects.map(item => item.tag))].map(
+                    {[...new Set(data.projects.map(item => item.tag))].map(
                         (tag) => (
                             <Tab label={tag} value={tag} className={tabValue === tag ? 'customTabs_item active' : 'customTabs_item'} />
                         )
@@ -40,7 +40,7 @@ const Portfolio = () => {
             {/* Projects */}
             <Grid item xs={12}>
                 <Grid container spacing={3}>
-                    {resumeData.projects.map((project) => (
+                    {data.projects.map((project) => (
                         <>
                             {tabValue === project.tag || tabValue === "All" ? (
                                 <Grid item xs={12} sm={6} md={4} lg={4}>

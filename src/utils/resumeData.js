@@ -16,7 +16,7 @@ import portfoliobt1 from '../assets/images/portfolio-bt1.jpg';
 import portfolioweb from '../assets/images/portfolioweb.jpg';
 
 
-export default {
+const data = {
     name: 'Evans R. Mondragon',
     phone: '+57 3127921501',
     title: 'Desarrollo Web',
@@ -31,8 +31,8 @@ export default {
             icon: <FacebookIcon />
         },
         Twitter: {
-            link: 'https://twitter.com/@Devans23159343',
-            text: '@Devans23159343',
+            link: 'https://twitter.com/Devans2021',
+            text: '@Devans2021',
             icon: <TwitterIcon />
         },
         Github: {
@@ -48,7 +48,7 @@ export default {
     },
 
     about:
-        " Soy freelancer en desarrollo web, orientado desde diferentes áreas, como la programación de front-end (HTML, CSS y jQuery / Javascript), accesibilidad digital, experiencia del usuario y diseño visual. \n \n Me encanta el desarrollo y el diseño web en todas sus formas y ayudo a las empresas a mejorar su presencia en Internet y a las personas a Entender mejor el mundo de la informática y las nuevas tecnologías.",
+        " Soy freelancer en desarrollo web, orientado desde diferentes áreas, como la programación de front-end (HTML, CSS y Javascript), accesibilidad digital, experiencia del usuario y diseño visual. \n \n Me encanta el desarrollo y el diseño web en todas sus formas y ayudo a las empresas a mejorar su presencia en Internet y a las personas a Entender mejor el mundo de la informática y las nuevas tecnologías.",
 
     experience: [
         {
@@ -57,14 +57,19 @@ export default {
             description: "Desarrollador en tecnologias WEB (HTML, CSS, JAVASCRIPT) CMS WordPress,  frameworks ANGULAR, REACT diseño UI/UX"
         },
         {
+            title: "AS-NET",
+            date: "2021 - Actualmente",
+            description: "Analista de Certificación, orientado a gestión de proyectos ágiles en implementación de software, pruebas de calidad y mantenimiento de aplicativos en produccion."
+        },
+        {
             title: "Banco de Occidente",
-            date: "2019 - Actualmente",
-            description: "Analista de calidad de aplicaciones Banco QA, analisis de requerimientos y funcionalidades del proyecto CTIF,  Test de pruebas funcionales y diseno de casos de prueba, metodologia SCRUM."
+            date: "2019 - 2021",
+            description: "Analista de calidad en aplicaciones del banco del proyecto Conexión Aval, análisis y diseño de casos de prueba, pruebas funcionales y no funcionales, administración de base a de datos Oracle, análisis y diseño de requerimientos y funcionalidades del sistema, administración de procesos ETL, gestión de proyectos metodología SCRUM."
         },
         {
             title: "Carvajal Tecnologia",
             date: "2018 - 2019",
-            description: "Implementacion de proyecto Factura Electronica FECO, capacitacion e instalacion de las diferentes etapas del proyecto en cliente final, pruebas funcionales y no funcionales sobre los requerimientos y entregables al cliente, administracion de proyecto en marco SCRUM. "
+            description: "Implementacion de proyecto Factura Electronica FECO, capacitacion e instalacion de las diferentes etapas del proyecto en cliente final, pruebas funcionales y no funcionales sobre los requerimientos y entregables al cliente, gestion de proyecto en marco SCRUM. "
         }
     ],
 
@@ -203,3 +208,5 @@ export default {
     ]
 
 }
+
+export default data;

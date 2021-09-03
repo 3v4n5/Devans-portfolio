@@ -2,7 +2,7 @@ import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap';
 import { HomeRounded, Telegram } from '@material-ui/icons'
 import { NavLink, withRouter } from 'react-router-dom'
-import resumeData from '../../utils/resumeData'
+import data from '../../utils/resumeData'
 import CustomButton from '../Button/Button'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -41,12 +41,11 @@ const Header = (props) => {
                 </Nav>
 
                 <div className="header_right">
-                    {Object.keys(resumeData.socials).map(key => (
-                        <a href={resumeData.socials[key].link} target="blank">
-                            {resumeData.socials[key].icon}
+                    {Object.keys(data.socials).map((Key, index) => (
+                        <a href={data.socials[Key].link} key={index} target="blank">
+                            {data.socials[Key].icon}
                         </a>
                     ))}
-                    {/* <CustomButton text={'Hire Me'} icon={<Telegram/>} className='Nav_button'/> */}
                     <Nav.Link as={NavLink} to="/contacto">
                         <CustomButton text={'Contactame'} icon={<Telegram />} />
                     </Nav.Link>
