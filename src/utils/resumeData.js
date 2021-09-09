@@ -14,6 +14,8 @@ import portfolio from '../assets/images/portfolio.jpg';
 import portfoliobt from '../assets/images/portfolio-bt.jpg';
 import portfoliobt1 from '../assets/images/portfolio-bt1.jpg';
 import portfolioweb from '../assets/images/portfolioweb.jpg';
+import Resume from '../assets/images/resume.png';
+import Resume2 from '../assets/images/resume2.png';
 
 
 const data = {
@@ -159,6 +161,32 @@ const data = {
             links: [
 
                 { link: 'https://3v4n5.github.io/portafolio-CSS-JS/', icon: <Language /> },
+                { link: 'https://github.com/3v4n5', icon: <GitHub /> }
+
+            ]
+        },
+        {
+            tag: 'Web',
+            image: Resume,
+            title: 'Resume Web, Html, Bootstrap, Js',
+            caption: 'Resume HTML, CSS, JS, BOOTSTRAP',
+            description: 'Resume Desarrollado con HTML, BOOTSTRAP, JS',
+            links: [
+
+                { link: 'https://3v4n5.github.io/Resume-Bootstrap-JS-Html/', icon: <Language /> },
+                { link: 'https://github.com/3v4n5', icon: <GitHub /> }
+
+            ]
+        },
+        {
+            tag: 'Web',
+            image: Resume2,
+            title: 'Resume Web, Html, CSS, JS',
+            caption: 'Resume HTML, CSS, JS',
+            description: 'Resume Desarrollado con HTML, CSS, JS',
+            links: [
+
+                { link: 'https://3v4n5.github.io/Resume-Html-CSS-JS/', icon: <Language /> },
                 { link: 'https://github.com/3v4n5', icon: <GitHub /> }
 
             ]
