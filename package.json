@@ -18,10 +18,10 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://3v4n5.github.io/Devans-portfolio/",
+  "homepage": "https://portafolio.devans.online/",
   
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo portafolio.devans.online > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
